@@ -13,6 +13,7 @@ objectives.
 .. toctree::
     :maxdepth: 1
 
+    origins
     changed_keywords
     dependency_links
     python_eggs
@@ -23,4 +24,4 @@ objectives.
     distutils-legacy
     functionalities
     commands
-    setuptools_api
+    former_api
