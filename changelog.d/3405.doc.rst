@@ -1,0 +1,1 @@
+Rearrange top-level documentation pages -- by :user:`jacalata`
