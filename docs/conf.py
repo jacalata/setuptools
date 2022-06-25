@@ -100,6 +100,9 @@ intersphinx_mapping.update({
     'importlib-resources': (
         'https://importlib-resources.readthedocs.io/en/latest', None
     ),
+    'importlib-metadata': (
+        'https://importlib-metadata.readthedocs.io/en/latest', None
+    )
 })
 
 # Add support for linking usernames
@@ -184,11 +187,6 @@ nitpick_ignore = [
     # TODO: check https://docutils.rtfd.io in the future
     ('py:mod', 'docutils'),  # there's no Sphinx site documenting this
 ]
-
-# Allow linking objects on other Sphinx sites seamlessly:
-intersphinx_mapping.update(
-    python=('https://docs.python.org/3', None),
-)
 
 # Add support for the unreleased "next-version" change notes
 extensions += ['sphinxcontrib.towncrier']

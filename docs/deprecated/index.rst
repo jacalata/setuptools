@@ -23,3 +23,4 @@ objectives.
     distutils-legacy
     functionalities
     commands
+    setuptools_api
