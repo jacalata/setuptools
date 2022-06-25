@@ -12,8 +12,9 @@ Setuptools focuses on this most common type of data files and offers three ways
 of specifying which files should be included in your packages, as described in
 the following sections.
 
-The default behaviour for ``setuptools`` will work well for pure Python packages, or packages with simple C extensions (that don't require
-any special C header). This page and :ref:`Controlling files in the distribution`
+The default behaviour for ``setuptools`` will work well for pure Python packages,
+or packages with simple C extensions (that don't require any special C header).
+This page and :ref:`Controlling files in the distribution`
 are about more complex scenarios when you want to include other types of files.
 
 include_package_data

@@ -100,6 +100,9 @@ intersphinx_mapping.update({
     'importlib-resources': (
         'https://importlib-resources.readthedocs.io/en/latest', None
     ),
+    'importlib-metadata': (
+        'https://importlib-metadata.readthedocs.io/en/latest', None
+    )
 })
 
 # Add support for linking usernames
@@ -113,6 +116,7 @@ extlinks = {
     'user': (f'{github_sponsors_url}/%s', '@%s'),  # noqa: WPS323
     'pypi': ('https://pypi.org/project/%s', '%s'),  # noqa: WPS323
     'wiki': ('https://wikipedia.org/wiki/%s', '%s'),  # noqa: WPS323
+    'RTD': ('https://%s.readthedocs.io', '%s'),  # noqa: WPS323
 }
 extensions += ['sphinx.ext.extlinks']
 
@@ -141,7 +145,7 @@ extensions += ['sphinx_reredirects']
 redirects = {
     "userguide/keywords": "/deprecated/changed_keywords.html",
     "userguide/commands": "/deprecated/commands.html",
-    "setuptools": "index"
+    "setuptools": "/index.html"
 }
 
 # Add support for inline tabs
@@ -184,11 +188,6 @@ nitpick_ignore = [
     # TODO: check https://docutils.rtfd.io in the future
     ('py:mod', 'docutils'),  # there's no Sphinx site documenting this
 ]
-
-# Allow linking objects on other Sphinx sites seamlessly:
-intersphinx_mapping.update(
-    python=('https://docs.python.org/3', None),
-)
 
 # Add support for the unreleased "next-version" change notes
 extensions += ['sphinxcontrib.towncrier']
