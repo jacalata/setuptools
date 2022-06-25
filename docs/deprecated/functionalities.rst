@@ -37,7 +37,7 @@ changes its base name.
 Configuration API
 =================
 
-.. deprecated:: ????
+.. deprecated:: 61.0.0
 
 Some automation tools may wish to access data from a configuration file.
 ``Setuptools`` exposes a ``read_configuration()`` function for
