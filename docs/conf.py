@@ -116,6 +116,7 @@ extlinks = {
     'user': (f'{github_sponsors_url}/%s', '@%s'),  # noqa: WPS323
     'pypi': ('https://pypi.org/project/%s', '%s'),  # noqa: WPS323
     'wiki': ('https://wikipedia.org/wiki/%s', '%s'),  # noqa: WPS323
+    'RTD': ('https://%s.readthedocs.io', '%s'),  # noqa: WPS323
 }
 extensions += ['sphinx.ext.extlinks']
 
