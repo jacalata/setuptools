@@ -12,15 +12,6 @@ This means that, for the majority of the use cases, you don't have to create
 a ``setup.py`` file, which in turn, not only allows automation scenarios but
 also reduces boilerplate code in some cases.
 
-.. note::
-   If compatibility with legacy builds (i.e. those not using the :pep:`517` build API)
-   is desired, a ``setup.py`` file containing a ``setup()`` function call is
-   still required even if your configuration resides in ``setup.cfg``/``pyproject.toml``.
-   A simple script will suffice, for example::
-
-       from setuptools import setup
-       setup()
-
 .. _example-setup-config:
 
 .. code-block:: ini
@@ -88,6 +79,15 @@ Metadata and options are set in the config sections of the same name.
   order to cover common usecases.
 
 * Unknown keys are ignored.
+
+.. note::
+   If compatibility with legacy builds (i.e. those not using the :pep:`517` build API)
+   is desired, a ``setup.py`` file containing a ``setup()`` function call is
+   still required even if your configuration resides in ``setup.cfg``/``pyproject.toml``.
+   A simple script will suffice, for example::
+
+       from setuptools import setup
+       setup()
 
 
 Using a ``src/`` layout
